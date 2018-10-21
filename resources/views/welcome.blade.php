@@ -80,26 +80,28 @@
     <div class="container">
         <div class="row vert-spacing centered">
             <div class="col-lg-6 col-lg-offset-3">
-                <h1>Your Landing Page<br />Looks Wonderful Now.</h1>
+                <h1>Commuting is Stressful</h1>
                 
-                <h3>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</h3>
+                <h3>Missed alarms, bad weather, traffic jams and road closures.. All of these things can really get our anxieties racing, especially when people are counting on you being on time</h3>
+
+                <h3>Chirp takes the stress out of your daily commute by monitoring traffic conditions and notifying you of potential issues in advance</h3>
             </div>
         </div>
     
         <div class="row vert-spacing centered">
             <div class="col-lg-4">                
-                <h4>1 - Browser Compatibility</h4>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever.</p>
+                <h4>Smart Notifications</h4>
+                <p>No more checking the local news, the weather, your navigation app..  No more checking anything! Chirp notifies you when its time to leave, when its time to get ready, even when its time to wake up!</p>
             </div>
             
             <div class="col-lg-4">                
-                <h4>2 - Email Campaigns</h4>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever.</p>
+                <h4>No App Required</h4>
+                <p>Tired of downloading yet another app to your already cluttered smartphone? With Chirp, you can sign up and get started with Chirp Notifications with no download required! You can always download the app later to unlock additional features</p>
             </div>
     
             <div class="col-lg-4">    
-                <h4>3 - Gather Your Notes</h4>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever.</p>
+                <h4>No More Digital Surveillance</h4>
+                <p>With Chirp, <u>we</u> notify <u>you</u> when its time to leave, so there is no reason to track your daily lives. In fact, we never track your location while using Chirp, unless you specifically allow us to do so.</p>
             </div>
         </div>
     </div>
