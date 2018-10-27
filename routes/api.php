@@ -13,6 +13,7 @@ use Illuminate\Http\Request;
 |
 */
 
-Route::middleware('auth:api')->get('/user', function (Request $request) {
-    return $request->user();
-});
+// Note, we are using Route Caching in Production, so don't use Closures in these route files
+// https://laravel.com/docs/5.7/controllers#route-caching
+
+Route::get('/user', 'GeneralApiController@getUser');

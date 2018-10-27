@@ -41,7 +41,7 @@
     
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#">Signup</a></li>
+                    <li><a href="#">Sign Up</a></li>
                     <li><a href="#">Login</a></li>
                 </ul>
             </div>
@@ -58,20 +58,10 @@
 
                     <h2>Get There, On Time</h2>
     
-                    <form class="form-inline mt-25" role="form">
-                        <div class="form-group mr-10">
-                            <input 
-                                type="email" 
-                                class="form-control" 
-                                id="exampleInputEmail1" 
-                                placeholder="Enter your email address">
-                        </div>
-    
-                        <button 
-                            type="submit" 
-                            class="btn btn-warning btn-lg"
-                        >Invite Me!</button>
-                    </form>
+                    <a 
+                        href="#" 
+                        class="btn btn-warning btn-lg mt-10"
+                    >Sign Up</a>
                 </div>
             </div>
         </div>
@@ -90,7 +80,7 @@
     
         <div class="row vert-spacing centered">
             <div class="col-lg-4">                
-                <h4>Smart Notifications</h4>
+                <h4><!-- <i class="fas fa-arrow-alt-circle-down"></i> --> Smart Notifications</h4>
                 <p>No more checking the local news, the weather, your navigation app..  No more checking anything! Chirp notifies you when its time to leave, when its time to get ready, even when its time to wake up!</p>
             </div>
             
@@ -106,12 +96,12 @@
         </div>
     </div>
     
-    <div class="container">
+    <div class="container mb-30">
         <div class="row vert-spacing centered">
             <hr>
 
             <div class="col-lg-6 col-lg-offset-3">
-                <h1>Stay Updated!</h1>
+                <h1>Stay Updated</h1>
                 <h3>Be the first to hear about new features</h3>
                 <br>
             </div>
@@ -129,7 +119,7 @@
                     <button 
                         type="submit" 
                         class="btn btn-warning btn-lg"
-                    >Invite Me!</button>
+                    >Subscribe</button>
                 </form>
             </div>
     
@@ -140,7 +130,10 @@
     <div class="container">
         <hr>
     
-        <p class="centered">Design Modified from BlackTie.co - Attribution License 3.0 - 2013</p>
+        <p class="centered">
+            <span>Copyright ChirpMyRide.com {{now()->year}}</span><br>
+            <span>Design Modified from BlackTie.co - Attribution License 3.0 - 2013</span>
+        </p>
     </div>
 </body>
 </html>
