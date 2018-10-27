@@ -72,7 +72,7 @@
             <div class="col-lg-6 col-lg-offset-3">
                 <h1>Commuting is Stressful</h1>
                 
-                <h3>Missed alarms, bad weather, traffic jams and road closures.. All of these things can really get our anxieties racing, especially when people are counting on you being on time</h3>
+                <h3>Missed alarms, bad weather, traffic jams and road closures.. All of these things can really get our anxieties racing, especially when people are counting on us to be there on time</h3>
 
                 <h3>Chirp takes the stress out of your daily commute by monitoring traffic conditions and notifying you of potential issues in advance</h3>
             </div>
@@ -80,8 +80,8 @@
     
         <div class="row vert-spacing centered">
             <div class="col-lg-4">                
-                <h4><!-- <i class="fas fa-arrow-alt-circle-down"></i> --> Smart Notifications</h4>
-                <p>No more checking the local news, the weather, your navigation app..  No more checking anything! Chirp notifies you when its time to leave, when its time to get ready, even when its time to wake up!</p>
+                <h4><i class="fas fa-arrow-alt-circle-down"></i> Smart Notifications</h4>
+                <p>No more checking the local news, the weather, your navigation app..  No more checking anything! Chirp notifies you when its time to leave, when its time to get ready, even what route to take to get there stress-free</p>
             </div>
             
             <div class="col-lg-4">                
