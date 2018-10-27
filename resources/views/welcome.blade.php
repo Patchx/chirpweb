@@ -11,6 +11,7 @@
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
+    <link type="text/css" rel="stylesheet" href="/css/app.css">
     <link rel="stylesheet" href="/css/flatty_theme.css">
 
     <link href='http://fonts.googleapis.com/css?family=Lato:300,400,900' rel='stylesheet' type='text/css'>
@@ -80,17 +81,17 @@
     
         <div class="row vert-spacing centered">
             <div class="col-lg-4">                
-                <h4><i class="fas fa-arrow-alt-circle-down"></i> Smart Notifications</h4>
+                <h4><i class="fas fa-bullhorn"></i> Smart Notifications</h4>
                 <p>No more checking the local news, the weather, your navigation app..  No more checking anything! Chirp notifies you when its time to leave, when its time to get ready, even what route to take to get there stress-free</p>
             </div>
             
             <div class="col-lg-4">                
-                <h4>No App Required</h4>
+                <h4><i class="fas fa-mobile-alt"></i> No App Required</h4>
                 <p>Tired of downloading yet another app to your already cluttered smartphone? With Chirp, you can sign up and get started with Chirp Notifications with no download required! You can always download the app later to unlock additional features</p>
             </div>
     
             <div class="col-lg-4">    
-                <h4>No More Digital Surveillance</h4>
+                <h4><i class="fas fa-user-secret"></i> No More Digital Surveillance</h4>
                 <p>With Chirp, <u>we</u> notify <u>you</u> when its time to leave, so there is no reason to track your daily lives. In fact, we never track your location while using Chirp, unless you specifically allow us to do so.</p>
             </div>
         </div>
