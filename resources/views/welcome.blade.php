@@ -9,7 +9,7 @@
         
     <title>Chirp</title>
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
 
     <link type="text/css" rel="stylesheet" href="/css/app.css">
     <link rel="stylesheet" href="/css/flatty_theme.css">
@@ -136,5 +136,7 @@
             <span>Design Modified from BlackTie.co - Attribution License 3.0 - 2013</span>
         </p>
     </div>
+
+    <script src="/js/app.js"></script>
 </body>
 </html>
