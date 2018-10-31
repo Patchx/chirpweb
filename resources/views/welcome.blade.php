@@ -6,13 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
+    <meta name="csrf-token" content="{{ csrf_token() }}">
         
     <title>Chirp</title>
 
     <link rel="stylesheet" href="/css/bootstrap.min.css">
 
     <link type="text/css" rel="stylesheet" href="/css/app.css">
-    <link rel="stylesheet" href="/css/flatty_theme.css">
 
     <link href='http://fonts.googleapis.com/css?family=Lato:300,400,900' rel='stylesheet' type='text/css'>
 
@@ -37,13 +37,13 @@
                     <span class="icon-bar"></span>
                 </button>
     
-                <a class="navbar-brand" href="#"><b>Chirp</b></a>
+                <a class="navbar-brand" href="/"><b>Chirp</b></a>
             </div>
     
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#">Sign Up</a></li>
-                    <li><a href="#">Login</a></li>
+                    <li><a href="#subscribe">Sign Up</a></li>
+                    <li><a href="#subscribe">Login</a></li>
                 </ul>
             </div>
         </div>
@@ -60,7 +60,7 @@
                     <h2>Get There, On Time</h2>
     
                     <a 
-                        href="#" 
+                        href="#subscribe" 
                         class="btn btn-warning btn-lg mt-10"
                     >Sign Up</a>
                 </div>
@@ -101,19 +101,27 @@
         <div class="row vert-spacing centered">
             <hr>
 
-            <div class="col-lg-6 col-lg-offset-3">
-                <h1>Stay Updated</h1>
-                <h3>Be the first to hear about new features</h3>
+            <div class="col-xs-12">
+                <h1><a name="subscribe">Chirp is under active development</a></h1>
+                <h3>Be the first to hear about new features!</h3>
                 <br>
             </div>
 
-            <div class="col-lg-6 col-lg-offset-3">
-                <form class="form-inline" role="form">
+            <div class="col-xs-12">
+                <form 
+                    action="/subscribe-email"
+                    method="POST"
+                    class="form-inline" 
+                    role="form"
+                >
                     <div class="form-group mr-15">
+                        @csrf
+
                         <input 
                             type="email" 
-                            class="form-control" 
+                            name="email"
                             id="exampleInputEmail1" 
+                            class="form-control"
                             placeholder="Enter your email address">
                     </div>
     
@@ -123,8 +131,6 @@
                     >Subscribe</button>
                 </form>
             </div>
-    
-            <div class="col-lg-3"></div>
         </div>
     </div>
     

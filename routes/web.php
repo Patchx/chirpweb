@@ -15,3 +15,6 @@
 // https://laravel.com/docs/5.7/controllers#route-caching
 
 Route::get('/', 'StaticPageController@getIndex');
+Route::post('/subscribe-email', 'StaticPageController@postSubscribeEmail');
+Route::get('/confirm-subscribed', 'StaticPageController@getConfirmSubscribed');
+
