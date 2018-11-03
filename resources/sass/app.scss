@@ -7,6 +7,7 @@
 
 // Custom Styles
 @import 'flatty_theme';
+@import 'styles';
 
 // Bootstrap
 /*@import '~bootstrap-sass/assets/stylesheets/bootstrap';*/
@@ -16,8 +17,3 @@
 @import '~@fortawesome/fontawesome-free/scss/regular';
 @import '~@fortawesome/fontawesome-free/scss/solid';
 @import '~@fortawesome/fontawesome-free/scss/fontawesome';
-
-.navbar-laravel {
-  background-color: #fff;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
-}
