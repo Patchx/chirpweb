@@ -3,10 +3,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="csrf-token" content="{{csrf_token()}}">
 
-<link type="text/css" rel="stylesheet" href="/css/bootstrap.min.css">
 <link type="text/css" rel="stylesheet" href="/css/app.css">
-
-<link href='http://fonts.googleapis.com/css?family=Lato:300,400,900' rel='stylesheet' type='text/css'>
 
 <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
@@ -15,9 +12,9 @@
 
 <meta http-equiv="Content-Security-Policy" content="
 	default-src 'self' *.gstatic.com; 
-	script-src 'self' 'unsafe-eval'; 
+	script-src 'self' 'unsafe-eval' *.cloudflare.com; 
 	style-src 'self' *.googleapis.com;
 	img-src 'self';
 	object-src 'self';
-	child-src 'none';
+	frame-src 'none';
 ">

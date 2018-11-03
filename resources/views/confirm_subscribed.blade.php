@@ -8,12 +8,16 @@
 
 @section('content')
     <div class="container mb-30">
-        <div class="row vert-spacing centered">
-            <div class="col-xs-12 mt-20">
-                <h1>Thanks for Subscribing</h1>
-                <h3>Stay tuned for good things to come</h3>
-                <br>
-            </div>
+    	<br><br>
+
+        <div class="text-center vert-spacing">
+            <h1>Thanks for Subscribing</h1>
+            <br>
+
+            <h3>Stay tuned for good things to come</h3>
+            <br><br><br>
+
+            <i class="fas fa-dove fa-10x"></i>
         </div>
     </div>
 @endsection

@@ -5,7 +5,7 @@
 
 body {
 	background-color:#f2f2f2;
-	font-family:lato,sans-serif;
+	font-family:sans-serif;
 	font-weight:300;
 	font-size:16px;
 	color:#555;
@@ -14,13 +14,13 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-	font-family:lato,sans-serif;
+	font-family:sans-serif;
 	font-weight:300;
 	color:#333;
 }
 
 h1 {
-	font-size:40px;
+	font-size: 40px;
 }
 
 h3 {
@@ -73,6 +73,10 @@ hr {
 	padding:0;
 }
 
+strong {
+	font-weight: 800;
+}
+
 i {
 	margin:8px;
 	color:#3498db;
@@ -91,13 +95,6 @@ i {
 
 .navbar-default * {
 	color:#fff;
-}
-
-.chirp-navbar-brand {
-	padding: 15px 15px;
-	font-size: 20px;
-	line-height: 20px;
-	float: left;
 }
 
 // --------------------------
@@ -127,7 +124,7 @@ i {
 	margin-bottom:15px;
 	color:#fff;
 	font-size:45px;
-	font-weight:300;
+	font-weight:400;
 	letter-spacing:1px;
 }
 
@@ -136,6 +133,6 @@ i {
 	margin-bottom:15px;
 	color:#fff;
 	font-size:45px;
-	font-weight:300;
+	font-weight:100;
 	letter-spacing:1px;
 }

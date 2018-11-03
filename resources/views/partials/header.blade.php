@@ -1,12 +1,13 @@
-<div class="navbar navbar-default navbar-fixed-top">
+<div class="navbar navbar-default fixed-top">
     <div class="container">
-        <div class="">
-            <a class="chirp-navbar-brand" href="/"><b>Chirp</b></a>
+        	<div class="p-2">
+        		<a href="/"><b>Chirp</b></a>
+        	</div>
 
-            <span class="chirp-navbar-brand pull-right">
+            <div>
                 <a href="#subscribe" class="mr-30">Sign Up</a>
                 <a href="#subscribe">Login</a>
-            </span>
+            </div>
         </div>
     </div>
 </div>

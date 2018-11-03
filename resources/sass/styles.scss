@@ -1,21 +1,34 @@
 
+// ----------
+// - Layout -
+// ----------
+
+#content {
+	min-height: 76vh;
+	padding-top: 5px;
+}
+
+.homepage-subscribe-div {
+	max-width: 360px;
+}
+
+.email-input {
+	width: 250px !important;
+}
+
 // ------------------
 // - Helper Classes -
 // ------------------
 
 .vert-spacing {
-	margin-top:40px;
-	margin-bottom:40px;
+	margin-top:60px;
+	margin-bottom:60px;
 }
 
 .form-control {
 	height:42px;
 	font-size:18px;
 	width:280px;
-}
-
-.centered {
-	text-align:center;
 }
 
 // -----------------------

@@ -10,7 +10,7 @@
     <div id="headerwrap">
         <div class="container">
             <div class="row">
-                <div class="col-lg-6">
+                <div class="col-md-6">
                     <h1>
                         <strong>Chirp</strong>
                     </h1>
@@ -22,13 +22,21 @@
                         class="btn btn-warning btn-lg mt-10"
                     >Sign Up</a>
                 </div>
+
+                <div class="col-md-4 offset-md-2 vert-spacing text-right pr-30">
+                    <div class="d-none d-sm-none d-md-block">
+                        <br><br>
+
+                        <i class="fas fa-crow fa-10x text-warning"></i>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
     
     <div class="container">
-        <div class="row vert-spacing centered">
-            <div class="col-lg-6 col-lg-offset-3">
+        <div class="row vert-spacing text-center">
+            <div class="col-lg-10 offset-lg-1">
                 <h1>Commuting is Stressful</h1>
                 
                 <h3>Missed alarms, bad weather, traffic jams and road closures.. All of these things can really get our anxieties racing, especially when people are counting on us to be there on time</h3>
@@ -37,7 +45,7 @@
             </div>
         </div>
     
-        <div class="row vert-spacing centered">
+        <div class="row vert-spacing text-center">
             <div class="col-lg-4">                
                 <h4><i class="fas fa-bullhorn"></i> Smart Notifications</h4>
                 <p>No more checking the local news, the weather, your navigation app..  No more checking anything! Chirp notifies you when its time to leave, when its time to get ready, even what route to take to get there stress-free</p>
@@ -56,36 +64,33 @@
     </div>
     
     <div class="container mb-30">
-        <div class="row vert-spacing centered">
-            <hr>
+        <div class="vert-spacing text-center">
+            <a name="subscribe"><hr></a>
 
-            <div class="col-xs-12">
-                <h1><a name="subscribe">Chirp is under active development</a></h1>
-                <h3>Be the first to hear about new features!</h3>
-                <br>
-            </div>
+            <h1>Chirp is under active development</h1>
+            <h3>Be the first to hear about new features!</h3>
+            <br>
 
-            <div class="col-xs-12">
+            <div class="mx-auto homepage-subscribe-div">
                 <form 
                     action="/subscribe-email"
                     method="POST"
                     class="form-inline" 
                     role="form"
                 >
-                    <div class="form-group mr-15">
+                    <div class="mr-15">
                         @csrf
 
                         <input 
                             type="email" 
                             name="email"
-                            id="exampleInputEmail1" 
-                            class="form-control"
+                            class="form-control email-input"
                             placeholder="Enter your email address">
                     </div>
-    
+
                     <button 
                         type="submit" 
-                        class="btn btn-warning btn-lg"
+                        class="btn btn-warning btn-md"
                     >Subscribe</button>
                 </form>
             </div>
