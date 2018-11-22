@@ -38,27 +38,29 @@
         <div class="row vert-spacing text-center">
             <div class="col-lg-10 offset-lg-1">
                 <h1>Commuting is Stressful</h1>
+                <br>
                 
-                <h3>Missed alarms, bad weather, traffic jams and road closures.. All of these things can really get our anxieties racing, especially when people are counting on us to be there on time</h3>
+                <h3 class="light-gray">Missed alarms, bad weather, traffic jams and road closures.. All of these things can really get our anxieties racing, especially when people are counting on us to be there on time</h3>
+                <br>
 
-                <h3>Chirp takes the stress out of your daily commute by monitoring traffic conditions and notifying you of potential issues in advance</h3>
+                <h3 class="light-gray">Chirp takes the stress out of your daily commute by monitoring traffic conditions and notifying you of potential issues in advance</h3>
             </div>
         </div>
     
         <div class="row vert-spacing text-center">
             <div class="col-lg-4">                
                 <h4><i class="fas fa-bullhorn"></i> Smart Notifications</h4>
-                <p>No more checking the local news, the weather, your navigation app..  No more checking anything! Chirp notifies you when its time to leave, when its time to get ready, even what route to take to get there stress-free</p>
+                <p class="mt-15 light-gray">No more checking the local news, the weather, your navigation app..  No more checking anything! Chirp notifies you when its time to leave, when its time to get ready, even what route to take to get there stress-free</p>
             </div>
             
             <div class="col-lg-4">                
                 <h4><i class="fas fa-mobile-alt"></i> No App Required</h4>
-                <p>Tired of downloading yet another app to your already cluttered smartphone? With Chirp, you can sign up and get started with Chirp Notifications with no download required! You can always download the app later to unlock additional features</p>
+                <p class="mt-15 light-gray">Tired of downloading yet another app to your already cluttered smartphone? With Chirp, you can sign up and get started with Chirp Notifications with no download required! You can always download the app later to unlock additional features</p>
             </div>
     
             <div class="col-lg-4">    
                 <h4><i class="fas fa-user-secret"></i> No More Digital Surveillance</h4>
-                <p>With Chirp, <u>we</u> notify <u>you</u> when its time to leave, so there is no reason to track your daily lives. In fact, we never track your location while using Chirp, unless you specifically allow us to do so.</p>
+                <p class="mt-15 light-gray">With Chirp, <u>we</u> notify <u>you</u> when its time to leave, so there is no reason to track your daily lives. In fact, we never track your location while using Chirp, unless you specifically allow us to do so.</p>
             </div>
         </div>
     </div>
@@ -68,7 +70,7 @@
             <a name="subscribe"><hr></a>
 
             <h1>Chirp is under active development</h1>
-            <h3>Be the first to hear about new features!</h3>
+            <h3 class="light-gray">Be the first to hear about new features!</h3>
             <br>
 
             <div class="mx-auto homepage-subscribe-div">
