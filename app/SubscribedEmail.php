@@ -9,6 +9,8 @@ class SubscribedEmail extends Model
 	protected $table = 'subscribed_emails';
 
     protected $fillable = [
-        'created_date', 'email',
+        'created_date', 
+        'email',
+        'is_user',
     ];
 }

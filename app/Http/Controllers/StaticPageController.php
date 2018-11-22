@@ -3,8 +3,9 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-
 use App\Http\Requests\SubscribeEmailRequest;
+
+use App\Events\SubscribedToMailingList;
 
 use App\User;
 use App\SubscribedEmail;
@@ -25,7 +26,8 @@ class StaticPageController extends Controller
     {
     	$redirect_url = '/confirm-subscribed';
 
-    	$subscribed_email = SubscribedEmail::where('email', $request->email)->first();
+    	$subscribed_email = SubscribedEmail::where('email', $request->email)
+                                           ->first();
 
     	if ($subscribed_email !== null) {
     		return redirect($redirect_url);
@@ -37,10 +39,12 @@ class StaticPageController extends Controller
     		return redirect($redirect_url);
     	}
 
-		SubscribedEmail::create([
+		$subscribed_email = SubscribedEmail::create([
 			'created_date' => now()->toDateString(),
 			'email' => $request->email,
 		]);
+
+        event(new SubscribedToMailingList($subscribed_email));
 
     	return redirect($redirect_url);
     }
