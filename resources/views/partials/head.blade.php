@@ -12,9 +12,13 @@
 
 <meta http-equiv="Content-Security-Policy" content="
 	default-src 'self' *.gstatic.com; 
-	script-src 'self' 'unsafe-eval' *.cloudflare.com; 
+	script-src 'self' 'unsafe-eval' *.cloudflare.com *.googletagmanager.com *.google-analytics.com; 
 	style-src 'self' *.googleapis.com;
-	img-src 'self';
+	img-src 'self' *.google-analytics.com;
 	object-src 'self';
 	frame-src 'none';
 ">
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-75809743-2"></script>
+<script src="/js/google_site_tag.js"></script>
