@@ -6,7 +6,7 @@ use App\Events\SubscribedToMailingList;
 use Illuminate\Queue\InteractsWithQueue;
 use Illuminate\Contracts\Queue\ShouldQueue;
 
-use Illuminate\Support\Facades\Mail;
+use Mail;
 
 use App\Mail\SubscriptionEmail;
 
@@ -34,7 +34,7 @@ class SendMailingListWelcomeEmail implements ShouldQueue
 
         // WIP
 
-        // Mail::to($subscribed_email->email)
-        //     ->send(new SubscriptionEmail('test message'));
+        Mail::to($subscribed_email->email)
+            ->send(new SubscriptionEmail('test message'));
     }
 }
