@@ -10,6 +10,8 @@ use Mail;
 
 use App\Mail\SubscriptionEmail;
 
+use App\Classes\Hasher;
+
 class SendMailingListWelcomeEmail implements ShouldQueue
 {
     /**
@@ -30,11 +32,16 @@ class SendMailingListWelcomeEmail implements ShouldQueue
      */
     public function handle(SubscribedToMailingList $event)
     {
-        $subscribed_email = $event->subscribed_email;
+        $subscribed_email = $event->subscribed_email->email;
 
-        // WIP
+        $hash = (new Hasher)->makeUnsubscribeHash($subscribed_email);
 
-        Mail::to($subscribed_email->email)
-            ->send(new SubscriptionEmail('test message'));
+        $unsubscribe_url = env('APP_URL') 
+            . '/mail/unsubscribed'
+            . '?email=' . $subscribed_email
+            . '&hash=' . $hash;
+
+        Mail::to($subscribed_email)
+            ->send(new SubscriptionEmail($unsubscribe_url));
     }
 }

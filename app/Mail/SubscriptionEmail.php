@@ -11,16 +11,16 @@ class SubscriptionEmail extends Mailable
 {
     use Queueable, SerializesModels;
 
-    public $test_data;
+    public $unsubscribe_url;
 
     /**
      * Create a new message instance.
      *
      * @return void
      */
-    public function __construct($test_data='')
+    public function __construct($unsubscribe_url)
     {
-        $this->test_data = $test_data;
+        $this->unsubscribe_url = $unsubscribe_url;
     }
 
     /**

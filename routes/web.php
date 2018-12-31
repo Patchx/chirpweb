@@ -20,7 +20,9 @@ Route::get('/', 'StaticPageController@getIndex');
 Route::post('/subscribe-email', 'StaticPageController@postSubscribeEmail');
 Route::get('/confirm-subscribed', 'StaticPageController@getConfirmSubscribed');
 
-// User routes
+Route::get('/mail/unsubscribed', 'EmailController@getUnsubscribed');
+
+// Logged in routes
 
 Auth::routes();
 
