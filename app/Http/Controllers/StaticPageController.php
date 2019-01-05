@@ -33,6 +33,16 @@ class StaticPageController extends Controller
     		return redirect($redirect_url);
     	}
 
+        $subscribed_email = SubscribedEmail::onlyTrashed()
+                                           ->where('email', $request->email)
+                                           ->first();
+
+        if ($subscribed_email !== null) {
+            $subscribed_email->restore();
+            event(new SubscribedToMailingList($subscribed_email));
+            return redirect($redirect_url);
+        }
+
     	$user = User::where('email', $request->email)->first();
 
     	if ($user !== null) {
