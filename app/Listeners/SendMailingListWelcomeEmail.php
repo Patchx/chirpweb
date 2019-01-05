@@ -32,16 +32,16 @@ class SendMailingListWelcomeEmail implements ShouldQueue
      */
     public function handle(SubscribedToMailingList $event)
     {
-        $subscribed_email = $event->subscribed_email->email;
+        $email_address = $event->subscribed_email->email;
 
-        $hash = (new Hasher)->makeUnsubscribeHash($subscribed_email);
+        $hash = (new Hasher)->makeUnsubscribeHash($event->subscribed_email);
 
         $unsubscribe_url = env('APP_URL') 
             . '/mail/unsubscribed'
-            . '?email=' . $subscribed_email
+            . '?email=' . $email_address
             . '&hash=' . $hash;
 
-        Mail::to($subscribed_email)
+        Mail::to($email_address)
             ->send(new SubscriptionEmail($unsubscribe_url));
     }
 }

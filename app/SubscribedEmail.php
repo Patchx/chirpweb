@@ -18,5 +18,6 @@ class SubscribedEmail extends Model
         'created_date', 
         'email',
         'is_user',
+        'unsubscribe_secret',
     ];
 }

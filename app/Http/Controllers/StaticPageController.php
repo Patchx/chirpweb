@@ -7,6 +7,8 @@ use App\Http\Requests\SubscribeEmailRequest;
 
 use App\Events\SubscribedToMailingList;
 
+use App\Classes\Factories\SubscribedEmailFactory;
+
 use App\User;
 use App\SubscribedEmail;
 
@@ -22,11 +24,14 @@ class StaticPageController extends Controller
     	return view('confirm_subscribed');
     }
 
-    public function postSubscribeEmail(SubscribeEmailRequest $request)
-    {
+    public function postSubscribeEmail(
+        SubscribedEmailFactory $email_factory,
+        SubscribeEmailRequest $request
+    ) {
     	$redirect_url = '/confirm-subscribed';
+        $email = $request->email;
 
-    	$subscribed_email = SubscribedEmail::where('email', $request->email)
+    	$subscribed_email = SubscribedEmail::where('email', $email)
                                            ->first();
 
     	if ($subscribed_email !== null) {
@@ -34,7 +39,7 @@ class StaticPageController extends Controller
     	}
 
         $subscribed_email = SubscribedEmail::onlyTrashed()
-                                           ->where('email', $request->email)
+                                           ->where('email', $email)
                                            ->first();
 
         if ($subscribed_email !== null) {
@@ -43,17 +48,13 @@ class StaticPageController extends Controller
             return redirect($redirect_url);
         }
 
-    	$user = User::where('email', $request->email)->first();
+    	$user = User::where('email', $email)->first();
 
     	if ($user !== null) {
     		return redirect($redirect_url);
     	}
 
-		$subscribed_email = SubscribedEmail::create([
-			'created_date' => now()->toDateString(),
-			'email' => $request->email,
-		]);
-
+        $subscribed_email = $email_factory->create($email, 0);
         event(new SubscribedToMailingList($subscribed_email));
 
     	return redirect($redirect_url);

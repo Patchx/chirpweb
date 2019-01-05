@@ -9,6 +9,8 @@ use Illuminate\Auth\Events\Registered;
 
 use App\SubscribedEmail;
 
+use App\Classes\Factories\SubscribedEmailFactory;
+
 class MarkSubscribedEmailAsUser
 {
     /**
@@ -35,11 +37,7 @@ class MarkSubscribedEmailAsUser
                                            ->first();
 
         if ($subscribed_email === null) {
-            SubscribedEmail::create([
-                'created_date' => now()->toDateString(),
-                'email' => $email,
-                'is_user' => 1,
-            ]);
+            (new SubscribedEmailFactory)->create($email, 1);
         } else {
             $subscribed_email->is_user = 1;
             $subscribed_email->save();
