@@ -1,5 +1,6 @@
 {
     "/js/app.js": "/js/app.js",
     "/css/app.css": "/css/app.css",
-    "/css/flatty_theme.css": "/css/flatty_theme.css"
+    "/css/flatty_theme.css": "/css/flatty_theme.css",
+    "/js/pages/signup-page.js": "/js/pages/signup-page.js"
 }

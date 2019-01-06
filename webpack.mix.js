@@ -13,4 +13,5 @@ const mix = require('laravel-mix');
 
 mix.js('resources/js/app.js', 'public/js')
    .sass('resources/sass/app.scss', 'public/css')
-   .sass('resources/sass/flatty_theme.scss', 'public/css');
+   .sass('resources/sass/flatty_theme.scss', 'public/css')
+   .js('resources/js/pages/registration/signup-page.js', 'public/js/pages');

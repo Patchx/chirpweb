@@ -12,9 +12,9 @@
 
 <meta http-equiv="Content-Security-Policy" content="
 	default-src 'self' *.gstatic.com; 
-	script-src 'self' 'unsafe-eval' *.cloudflare.com *.googletagmanager.com *.google-analytics.com; 
-	style-src 'self' *.googleapis.com;
-	img-src 'self' *.google-analytics.com;
+	script-src 'self' 'unsafe-eval' 'unsafe-inline' *.cloudflare.com *.googletagmanager.com *.google-analytics.com; 
+	style-src 'self' 'unsafe-inline' *.googleapis.com;
+	img-src 'self' *.google-analytics.com *.googletagmanager.com;
 	object-src 'self';
 	frame-src 'none';
 ">

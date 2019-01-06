@@ -21,6 +21,7 @@ Route::post('/subscribe-email', 'StaticPageController@postSubscribeEmail');
 Route::get('/confirm-subscribed', 'StaticPageController@getConfirmSubscribed');
 
 Route::get('/mail/unsubscribed', 'EmailController@getUnsubscribed');
+Route::get('/sign-up', 'RegistrationController@getSignUp');
 
 // Logged in routes
 
